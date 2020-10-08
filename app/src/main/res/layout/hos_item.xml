@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="13dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/hos_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dur_box"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="3" />
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/dltb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_button"
+                android:text="X"
+                android:textColor="#2B2B2B"/>
+
+            <TextView
+                android:id="@+id/itemname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/dltb"
+                android:padding="5dp"
+                android:textColor="#4A4A4A"
+                android:text="itemname"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/entp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemname"
+                android:layout_alignLeft="@+id/itemname"
+                android:paddingLeft="5dp"
+                android:text="entp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/entp"
+                android:layout_alignLeft="@+id/itemname"
+                android:text="content"
+                android:textSize="14dp" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
